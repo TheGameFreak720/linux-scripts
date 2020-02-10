@@ -2,13 +2,14 @@
 
 ## Description
 
-This repo is designed to whole all the scripts I use on my Linux machine that make my life easier.
+This repo is designed to hold all the scripts I use on my Linux machine that make my life easier.
 
 ## git-pr-reviewers.js
 
 ### Description
 
-Designed to give me 2 coworkers to review one of my PR's. It's divided in sections making it easier to specify which department is the one I need to be reviewing the PR.
+Designed by [Erin Sullivan](https://github.com/erinesullivan) to give me 2 coworkers to review one of my PR's. It's divided in sections making
+it easier to specify which department is the one I need to be reviewing the PR.
 
 ### Usage
 
