@@ -39,3 +39,13 @@ After the document is created it opens it using the vim text editor.
 ### Usage
 
 `bash review-docs.sh`
+
+## set-dev-env-fedora.sh
+
+### Description
+
+A script that installs important programs that I use day to day as a developer for Fedora OS
+
+### Usage
+
+`bash set-dev-env-fedora.sh`
