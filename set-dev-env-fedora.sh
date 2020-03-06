@@ -126,3 +126,7 @@ sudo dnf install htop
 #Keybase
 sudo dnf install https://prerelease.keybase.io/keybase_amd64.rpm
 run_keybase
+
+#Build-essentials
+sudo dnf install make automake gcc gcc-c++ kernel-devel
+
