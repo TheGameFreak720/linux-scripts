@@ -62,9 +62,6 @@ EOF
 sudo npm install -g @vue/cli gatsby-cli create-react-app eslint
 curl https://cli-assets.heroku.com/install.sh | sh
 
-#Spotify
-sudo dnf install lpf-spotify-client
-
 #Arduino
 sudo dnf install arduino
 
@@ -126,9 +123,6 @@ EOF
 #htop
 sudo dnf install htop
 
-#Slack
-sudo dnf -y install wget
-wget https://downloads.slack-edge.com/linux_releases/slack-3.4.0-0.1.fc21.x86_64.rpm
-sudo dnf localinstall slack-3.4.0-0.1.fc21.x86_64.rpm
-
-
+#Keybase
+sudo dnf install https://prerelease.keybase.io/keybase_amd64.rpm
+run_keybase
