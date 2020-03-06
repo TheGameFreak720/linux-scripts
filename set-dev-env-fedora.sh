@@ -6,6 +6,7 @@
 sudo dnf install nodejs
 
 #Yarn
+curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
 sudo dnf install yarn
 
 #Vim
@@ -58,7 +59,7 @@ colorscheme archery
 EOF
 
 #CLI
-npm install -g @vue/cli gatsby-cli create-react-app eslint
+sudo npm install -g @vue/cli gatsby-cli create-react-app eslint
 curl https://cli-assets.heroku.com/install.sh | sh
 
 #Spotify
