@@ -39,3 +39,6 @@ sudo make altinstall
 #Configure npm for Python 2
 #https://github.com/nodejs/node-gyp#configuring-python-dependency
 npm config set python /usr/local/bin/python2.7
+
+#jq
+sudo dnf install jq
