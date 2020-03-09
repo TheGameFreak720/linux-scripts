@@ -11,6 +11,10 @@ sudo systemctl enable redis.service
 sudo dnf install postgresql postgresql-server
 sudo postgresql-setup initdb
 sudo systemctl start postgresql
+
+# Allow postgres to start on boot
+sudo systemctl enable postgresql
+
 USER_NAME=$USER
 sudo su - postgres
 psql -c "CREATE USER $USER_NAME WITH SUPERUSER CREATEDB CREATEROLE REPLICATION;"
