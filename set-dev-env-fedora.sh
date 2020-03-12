@@ -3,14 +3,14 @@
 #For Fedora Linux
 
 #NodeJS
-sudo dnf install nodejs
+sudo dnf install nodejs -y
 
 #Yarn
 curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
-sudo dnf install yarn
+sudo dnf install yarn -y
 
 #Vim
-sudo dnf install vim-enhanced
+sudo dnf install vim-enhanced -y
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
@@ -85,10 +85,10 @@ Categories=Development;Utilities;
 EOF
 
 #Git
-sudo dnf install git-all
+sudo dnf install git-all -y
 
 #Tmux
-sudo dnf -y install tmux
+sudo dnf -y install tmux -y
 cd ~
 cat > .tmux.conf <<- "EOF"
 # Send Prefix
@@ -121,12 +121,14 @@ bind-key -T copy-mode-vi r send-keys -X rectangle-toggle
 EOF
 
 #htop
-sudo dnf install htop
+sudo dnf install htop -y
 
 #Keybase
-sudo dnf install https://prerelease.keybase.io/keybase_amd64.rpm
+sudo dnf install https://prerelease.keybase.io/keybase_amd64.rpm -y
 run_keybase
 
 #Build-essentials
-sudo dnf install make automake gcc gcc-c++ kernel-devel
+sudo dnf install make automake gcc gcc-c++ kernel-devel -y
 
+#fzf
+sudo dnf install fzf -y
