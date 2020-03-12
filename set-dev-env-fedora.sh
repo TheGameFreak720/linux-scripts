@@ -132,3 +132,6 @@ sudo dnf install make automake gcc gcc-c++ kernel-devel -y
 
 #fzf
 sudo dnf install fzf -y
+
+#NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
