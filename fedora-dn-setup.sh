@@ -29,7 +29,7 @@ sudo  pip3 install awscli
 
 #Python 2
 #https://tecadmin.net/install-python-2-7-on-centos-rhel/
-dnf install gcc openssl-devel bzip2-devel -
+sudo dnf install gcc openssl-devel bzip2-devel -
 cd /usr/src
 sudo wget https://www.python.org/ftp/python/2.7.16/Python-2.7.16.tgz
 sudo tar xzf Python-2.7.16.tgz
@@ -41,4 +41,4 @@ sudo make altinstall
 npm config set python /usr/local/bin/python2.7
 
 #jq
-sudo dnf install jq
+sudo dnf install jq -y
