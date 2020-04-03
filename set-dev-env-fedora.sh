@@ -59,7 +59,7 @@ colorscheme archery
 EOF
 
 #CLI
-sudo npm install -g @vue/cli gatsby-cli create-react-app eslint
+sudo npm install -g @vue/cli gatsby-cli create-react-app eslint firebase-tools
 curl https://cli-assets.heroku.com/install.sh | sh
 
 #Arduino
