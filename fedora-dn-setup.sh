@@ -15,6 +15,20 @@ sudo systemctl start postgresql
 sudo systemctl enable postgresql
 #Go to wiki for step instructions on setting the environment for Docnetwork. Refer to the distros docs for more info
 
+# After installing this make sure to enable this services to have a smooth experience when restoring a dump
+# You can create an extension like this: `CREATE EXTENSION fuzzystrmatch;`
+
+# This is the list:
+#     Name      | Version |   Schema   |                     Description                     
+#---------------+---------+------------+-----------------------------------------------------
+# fuzzystrmatch | 1.1     | public     | determine similarities and distance between strings
+# hstore        | 1.6     | public     | data type for storing sets of (key, value) pairs
+# plpgsql       | 1.0     | pg_catalog | PL/pgSQL procedural language
+# uuid-ossp     | 1.1     | public     | generate universally unique identifiers (UUIDs)
+
+sudo dnf install postgresql-contrib
+
+
 #Ruby
 sudo dnf install ruby -y
 
