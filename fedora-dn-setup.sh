@@ -19,7 +19,7 @@ sudo systemctl enable postgresql
 # You can create an extension like this: `CREATE EXTENSION fuzzystrmatch;`
 
 # This is the list:
-#     Name      | Version |   Schema   |                     Description                     
+#     Name      | Version |   Schema   |                     Description
 #---------------+---------+------------+-----------------------------------------------------
 # fuzzystrmatch | 1.1     | public     | determine similarities and distance between strings
 # hstore        | 1.6     | public     | data type for storing sets of (key, value) pairs
@@ -39,7 +39,9 @@ sudo gem install tmuxinator
 sudo gem install papertrail
 
 #AWS CLI
-sudo  pip3 install awscli
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
 
 #Python 2
 #https://tecadmin.net/install-python-2-7-on-centos-rhel/
