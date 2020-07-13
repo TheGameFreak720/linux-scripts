@@ -26,6 +26,7 @@ git clone https://github.com/kchmck/vim-coffee-script.git
 git clone https://github.com/pangloss/vim-javascript.git
 git clone https://github.com/lepture/vim-css.git
 git clone https://github.com/posva/vim-vue.git
+git clone https://github.com/tomlion/vim-solidity.git
 
 cd ~
 cat > .vimrc <<- "EOF"
