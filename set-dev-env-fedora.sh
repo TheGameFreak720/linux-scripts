@@ -18,7 +18,7 @@ cd ~/.vim/bundle
 git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
 git clone https://github.com/myusuf3/numbers.vim.git
 git clone https://github.com/vim-airline/vim-airline.git
-git clone https://github.com/Badacadabra/vim-archery.git
+git clone https://github.com/dracula/vim.git dracula
 git clone https://github.com/preservim/nerdtree.git
 git clone https://github.com/heavenshell/vim-jsdoc.git
 git clone https://github.com/kien/ctrlp.vim.git
@@ -31,7 +31,7 @@ git clone https://github.com/tomlion/vim-solidity.git
 cd ~
 cat > .vimrc <<- "EOF"
 execute pathogen#infect()
-syntax on
+syntax enable
 filetype plugin indent on
 " On pressing tab, insert 2 spaces
 set expandtab
@@ -56,7 +56,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-colorscheme archery
+colorscheme dracula
 EOF
 
 #CLI
