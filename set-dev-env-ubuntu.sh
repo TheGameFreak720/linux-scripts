@@ -27,6 +27,7 @@ git clone https://github.com/pangloss/vim-javascript.git
 git clone https://github.com/lepture/vim-css.git
 git clone https://github.com/posva/vim-vue.git
 git clone https://github.com/tomlion/vim-solidity.git
+git clone https://github.com/leafgarland/typescript-vim.git
 
 cd ~
 cat > .vimrc <<- "EOF"
@@ -138,3 +139,6 @@ sudo apt install fzf -y
 
 #NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+#TypeScript
+npm install -g typescript
