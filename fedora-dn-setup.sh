@@ -58,3 +58,8 @@ npm config set python /usr/local/bin/python2.7
 
 #jq
 sudo dnf install jq -y
+
+#Terraform
+sudo dnf install -y dnf-plugins-core
+sudo dnf config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
+sudo dnf -y install terraform
