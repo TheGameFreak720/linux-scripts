@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 
 #For Ubuntu Linux
 
@@ -125,11 +125,6 @@ EOF
 
 #htop
 sudo apt install htop -y
-
-#Keybase
-curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
-sudo apt install ./keybase_amd64.deb
-run_keybase
 
 #Build-essentials
 sudo apt install make automake gcc -y
