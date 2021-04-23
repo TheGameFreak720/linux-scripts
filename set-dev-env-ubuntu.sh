@@ -137,3 +137,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 #TypeScript
 npm install -g typescript
+
+#Grip
+pip install grip
