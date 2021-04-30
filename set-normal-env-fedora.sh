@@ -1,14 +1,14 @@
 #!/bin/bash
 
-#For Fedora Linux
+# For Fedora Linux
 
-#Snap
+# Snap
 sudo dnf install snapd
 sudo ln -s /var/lib/snapd/snap /snap
 
-#NordPass
+# NordPass
 sudo snap install nordpass
 
-#Keybase
+# Keybase
 sudo dnf install https://prerelease.keybase.io/keybase_amd64.rpm -y
 run_keybase

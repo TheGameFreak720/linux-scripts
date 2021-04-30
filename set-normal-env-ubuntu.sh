@@ -1,15 +1,15 @@
 #!/bin/bash
 
-#For Ubuntu Linux
+# For Ubuntu Linux
 
-#Keybase
+# Keybase
 curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
 sudo apt install ./keybase_amd64.deb
 run_keybase
 
-#Snapd
+# Snapd
 sudo apt update
 sudo apt install snapd
 
-#Nordpass
+# Nordpass
 sudo snap install nordpass
