@@ -44,8 +44,34 @@ After the document is created it opens it using the vim text editor.
 
 ### Description
 
-A script that installs important programs that I use day to day as a developer for Fedora OS
+A script that installs important programs that I use day to day as a developer for Fedora distro
 
 ### Usage
 
 `bash set-dev-env-fedora.sh`
+
+## set-normal-env-fedora.sh
+
+### Description
+
+A script that installs programs that I use that aren't related to development on the Fedora distro
+
+`bash set-normal-env-fedora.sh`
+
+## set-dev-env-ubuntu.sh
+
+### Description
+
+A script that installs important programs that I use day to day as a developer for Ubuntu distro
+
+### Usage
+
+`bash set-dev-env-ubuntu.sh`
+
+## set-normal-env-ubuntu.sh
+
+### Description
+
+A script that installs programs that I use that aren't related to development on the Ubuntu distro
+
+`bash set-normal-env-ubuntu.sh`
