@@ -175,4 +175,8 @@ pip install grip
 sudo dnf install cronie -y
 sudo systemctl start crond.service
 
+# Docker
+sudo dnf install docker -y
+sudo systemctl start docker
+
 cd ~
