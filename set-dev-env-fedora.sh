@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 
 # For Fedora Linux
 
@@ -70,7 +70,7 @@ colorscheme dracula
 EOF
 
 # Arduino
-sudo dnf install arduino
+sudo dnf install arduino -y
 
 # Git
 sudo dnf install git-all -y
@@ -163,7 +163,7 @@ sudo dnf install make automake gcc gcc-c++ kernel-devel -y
 sudo dnf install fzf -y
 
 # NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | sudo bash
 
 # TypeScript
 npm install -g typescript
@@ -171,52 +171,8 @@ npm install -g typescript
 # Grip
 pip install grip
 
-# Cheat
-pip install cheat
-
-cd ~/.cheat
-cat > tmux <<- "EOF"
-# Tmux Cheatsheet
-
-## Prefix
-
-* CTRL + a
-
-## Reload session
-
-* prefix + r
-
-## Switch Panes
-
-* prefix + up arrow, prefix + down arrow, prefix + left arrow, prefix + right -> up, down, left, right
-
-## Switch Windows
-
-* prefix + left -> previous window
-* prefix + right -> next window
-
-## Split Terminal
-
-* prefix + v -> vertical split
-* prefix + h -> horizontal split
-
-## Copy Paste
-
-You can use Vim keybindings or mouse to copy
-
-* prefix + [ -> copy mode
-* prefix + P -> paste
-
-## Plugins
-
-### Install Plugins
-
-* prefix + I
-
-### Resurrect
-
-* prefix + s -> save session
-* prefix + r -> restore session
-EOF
+# Cronie
+sudo dnf install cronie -y
+sudo systemctl start crond.service
 
 cd ~
