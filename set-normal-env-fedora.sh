@@ -15,3 +15,6 @@ run_keybase
 
 # Spotify
 sudo snap install spotify -y
+
+# Standard Notes
+sudo snap install standard-notes -y
