@@ -12,3 +12,6 @@ sudo snap install nordpass
 # Keybase
 sudo dnf install https://prerelease.keybase.io/keybase_amd64.rpm -y
 run_keybase
+
+# Spotify
+sudo snap install spotify -y
