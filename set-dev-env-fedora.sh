@@ -5,6 +5,9 @@
 # Make sure we are on the root
 cd ~
 
+# Update packages
+sudo dnf update -y
+
 # NodeJS
 sudo dnf install nodejs -y
 
@@ -66,34 +69,16 @@ let g:syntastic_check_on_wq = 0
 colorscheme dracula
 EOF
 
-# CLI
-sudo npm install -g @vue/cli gatsby-cli create-react-app eslint firebase-tools
-curl https://cli-assets.heroku.com/install.sh | sh
-
 # Arduino
 sudo dnf install arduino
 
-# Postman
-wget https://dl.pstmn.io/download/latest/linux64 -O postman-linux-x64.tar.gz
-sudo tar xvzf postman-linux-x64.tar.gz -C /opt
-sudo ln -s /opt/Postman/Postman /usr/bin/postman
-
-cat << EOF > ~/.local/share/applications/postman2.desktop
-[Desktop Entry]
-Name=Postman
-GenericName=API Client
-X-GNOME-FullName=Postman API Client
-Comment=Make and view REST API calls and responses
-Keywords=api;
-Exec=/opt/Postman/Postman
-Terminal=false
-Type=Application
-Icon=/opt/Postman/app/resources/app/assets/icon.png
-Categories=Development;Utilities;
-EOF
-
 # Git
 sudo dnf install git-all -y
+
+# GitHub CLI
+sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+sudo dnf install gh -y
+sudo dnf update gh -y
 
 # Tmux
 sudo dnf -y install tmux -y
