@@ -1,4 +1,5 @@
 'use strict';
+
 // Start with an empty array for Git PR Reviewers
 let gitPRReviewersArray = [];
 

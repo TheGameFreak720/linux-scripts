@@ -179,4 +179,7 @@ sudo systemctl start crond.service
 sudo dnf install docker -y
 sudo systemctl start docker
 
+# Docker Compose
+sudo dnf install docker-compose
+
 cd ~
