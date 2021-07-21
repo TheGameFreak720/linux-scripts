@@ -175,11 +175,25 @@ pip install grip
 sudo dnf install cronie -y
 sudo systemctl start crond.service
 
-# Docker
-sudo dnf install docker -y
-sudo systemctl start docker
+# dnf-plugins-core
+sudo dnf -y install dnf-plugins-core
 
-# Docker Compose
-sudo dnf install docker-compose
+# docker
+sudo dnf config-manager \
+    --add-repo \
+    https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf install docker -y
+# Docker Engine
+sudo dnf install docker-ce docker-ce-cli containerd.io -y
+# Start docker
+sudo systemctl start docker
+# Run docker rootless
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+sudo chmod g+rwx "$HOME/.docker" -R
+
+# docker-compose TODO
 
 cd ~
